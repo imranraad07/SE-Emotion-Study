@@ -1,0 +1,13 @@
+EMOTICONS = {"XD": "Laughing", "XD,": "Laughing", "O:-)": "Angel", ")-:": "Left-handed Sad Face", ":-|": "Indifferent",
+             "(-:": "Left-handed Smiley Face", "@": "Mention", "~,~": "Napping", ":-B": "Nerd", "$_$": "Greedy",
+             "8-)": "Glasses", ":-(": "Frowning", ">:)": "Evil Grin", "//_^": "Emo", ":*)": "Drunk", "#-o": "Doh!",
+             "<l:0": "Partying", "|-O": "Yawn", "~:0": "Baby", ":/": "Unsure", "=-O": "Uh-oh", ":-#": "Braces",
+             ":-J": "Tongue in Cheek", "*<:o)": "Clown", "B-)": "Cool", ":'(": "Crying", ":-/": "Perplexed",
+             "*-*": "Dazed", "=D": "Laughing Out Loud", ":)": "Smile", "^_^": "Overjoyed", ":o": "Surprised",
+             "<><": "Fish", "[¬º-°]¬": "Zombie", ":(": "Sad", "</3": "Broken Heart", "@~)~~~~": "Rose", ":-*": "Kiss",
+             ":->": "Grin", ":-Q": "Smoking", ":P": "Sticking Tongue Out", "=^.^=": "Cat", "=P": "Frustrated",
+             ":-)": "Happy", "<:3)~": "Mouse", ":-E": "Vampire", ";-)": "Winking", "#": "Hashtag", ":S": "Sarcastic",
+             "O.o": "Confused", "<3": "Love", "(*v*)": "Bird", "(.V.)": "Alien", "X-(": "Angry", "=8)": "Pig",
+             ":>": "Smug", "(-}{-)": "Kissing", "=O": "Shocked", ":-D": "Big Grin", ":D": "Very Happy",
+             ":-@": "Screaming", "X-p": "Joking", ":-)(-:": "Married", ":-&": "Tongue Tied", "=/": "Mad", "{}": "Hug",
+             "\:D/": "Dancing", ":o3": "Dog", ":-\\": "undecided", ";)": "winking"}
