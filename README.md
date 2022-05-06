@@ -22,10 +22,11 @@ The project includes the following files and folders:
   - __/crawlers__: A folder that contains the scripts we have used for data crawling.
      - githubcrawler.py: script for GitHub crawling.
  - __/data_augmentation__: A folder that contains data augmentation related scripts.
-     - data_augmenter-unconstrained.py: contains codes regarding Unconstrained strategy
-     - data_augmenter-lexicon.py: contains codes regarding Lexicon strategy
-     - data_augmenter-polarity.py: contains codes regarding Polarity strategy
+     - data_augmenter-unconstrained.py: contains codes regarding Unconstrained strategy.
+     - data_augmenter-lexicon.py: contains codes regarding Lexicon strategy.
+     - data_augmenter-polarity.py: contains codes regarding Polarity strategy.
  - __/esem-e__: A folder that contains esem-e related code, data preprocessing, preprocessed datasets, and predictions.
+     - svm.py: codes for SVM model described in the esem-e model.
  - Annotation Instructions.docx: contains the annotation descriptions that the annotators used.
  - requriments.txt: contains the The python libraries used in this experiment.
 
