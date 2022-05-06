@@ -26,8 +26,8 @@ The project includes the following files and folders:
      - data_augmenter-lexicon.py: contains implementation of Lexicon strategy.
      - data_augmenter-polarity.py: contains implementation of Polarity strategy.
  - __/esem-e__: A folder that contains esem-e related code, data preprocessing, preprocessed datasets, and predictions.
-     - svm.py: codes for SVM model described in the esem-e model.
- - Annotation Instructions.docx: contains the annotation descriptions that the annotators used.
+     - svm.py: codes for the SVM model described in the esem-e model.
+ - Annotation Instructions.docx: contains the annotation instructions that the annotators used.
  - requriments.txt: contains the The python libraries used in this experiment.
 
 ## Setup
