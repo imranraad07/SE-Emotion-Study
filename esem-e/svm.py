@@ -7,6 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 
 emotions = ['ANGER', 'LOVE', 'FEAR', 'JOY', 'SAD', 'SURPRISE']
+tag = '-lexicon'
 
 Y_TOTAL_TRUE = []
 Y_TOTAL_PRED = []
@@ -15,7 +16,7 @@ for emotion in emotions:
 
     X_train = []
     y_train = []
-    with open('dataset/GIT_' + emotion + '_TRAIN-lexicon' + '.tsv') as csv_file:
+    with open('dataset/GIT_' + emotion + '_TRAIN' + tag + '.tsv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter='\t')
         line_count = 0
         counter = 0

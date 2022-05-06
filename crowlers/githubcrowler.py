@@ -1,5 +1,3 @@
-# using an access token
-# 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
 import csv
 import json
 import time
@@ -11,8 +9,8 @@ import os
 token = os.getenv('GITHUB_TOKEN', '...')
 g = Github(token)
 total_count = 5000
-
 repo = g.get_repo("webpack/webpack")
+
 since = datetime.strptime("2020-01-01T00:00:00", "%Y-%m-%dT%H:%M:%S")
 # https://github.com/microsoft/TypeScript
 with open('../dataset/github/pull_requests/webpack.csv', 'w+') as csvfile:
