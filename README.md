@@ -1,7 +1,7 @@
 # Paper: Data Augmentation for Improving Emotion Recognition in Software Engineering Communication
-In the following, we briefly describe the different components that are included in this project and the softwares required to run the experiments.
+In the following, we briefly describe the different components that are included in this project and the software required to run the experiments.
 
-Of three tools we used, two of them are open-source and available here:
+Of the three tools we used, two of them are open-source and available here:
 * EMTk: https://github.com/collab-uniba/Emotion_and_Polarity_SO
 * SEntiMoji: https://github.com/SEntiMoji/SEntiMoji
 
@@ -22,9 +22,9 @@ The project includes the following files and folders:
   - __/crawlers__: A folder that contains the scripts we have used for data crawling.
      - githubcrawler.py: script for GitHub crawling.
  - __/data_augmentation__: A folder that contains data augmentation related scripts.
-     - data_augmenter-unconstrained.py: contains codes regarding Unconstrained strategy.
-     - data_augmenter-lexicon.py: contains codes regarding Lexicon strategy.
-     - data_augmenter-polarity.py: contains codes regarding Polarity strategy.
+     - data_augmenter-unconstrained.py: contains implementation of Unconstrained strategy.
+     - data_augmenter-lexicon.py: contains implementation of Lexicon strategy.
+     - data_augmenter-polarity.py: contains implementation of Polarity strategy.
  - __/esem-e__: A folder that contains esem-e related code, data preprocessing, preprocessed datasets, and predictions.
      - svm.py: codes for SVM model described in the esem-e model.
  - Annotation Instructions.docx: contains the annotation descriptions that the annotators used.
