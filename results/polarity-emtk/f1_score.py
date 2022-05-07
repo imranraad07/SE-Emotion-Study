@@ -21,7 +21,7 @@ with open(path + '_anger.csv') as csv_file:
             y_true[idx].append('anger')
         idx = idx + 1
 
-with open(path + '_sadness.csv') as csv_file:
+with open(path + '_sad.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     next(csv_reader)
     idx = 0

@@ -21,12 +21,16 @@ The project includes the following files and folders:
 	    - bart-polarity.csv: contains Polarity based augmented dataset.
   - __/crawlers__: A folder that contains the scripts we have used for data crawling.
      - githubcrawler.py: script for GitHub crawling.
+ - __/data_preprocessing__: A folder that contains data preprocessing steps described in the paper section 3.2
+     - data_cleaner.py: contains implementation of the various filtering such as code filtering, url fildering, stacktrace removing, etc.
+     - github_modifier.py: contains implementation of dataset modifying based on functions implementing in data_cleaner.py.
  - __/data_augmentation__: A folder that contains data augmentation related scripts.
      - data_augmenter-unconstrained.py: contains implementation of Unconstrained strategy.
      - data_augmenter-lexicon.py: contains implementation of Lexicon strategy.
      - data_augmenter-polarity.py: contains implementation of Polarity strategy.
  - __/esem-e__: A folder that contains esem-e related code, data preprocessing, preprocessed datasets, and predictions.
      - svm.py: codes for the SVM model described in the esem-e model.
+  - __/results__: A folder that contains the results of all tools for all experiments.
  - Annotation Instructions.docx: contains the annotation instructions that the annotators used.
  - requriments.txt: contains the The python libraries used in this experiment.
 

@@ -26,11 +26,6 @@ with open(file_directory) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
 
-    current_id = ''
-    current_time = ''
-    current_user = ''
-    current_comment = ''
-    current_modified_comment = ''
 
     for row in csv_reader:
         if line_count == 0:
@@ -39,12 +34,9 @@ with open(file_directory) as csv_file:
         else:
             org_data = row
             github_chat = str(row[3])
-            github_chat = data_cleaner.filter_nontext(github_chat)
-            row.append(github_chat)
+            current_modified_comment = data_cleaner.filter_nontext(github_chat)
             if len(str(github_chat).split()) > 1:
-                modified_data.append(row)
-    modified_data.append(
-        [current_id, current_time, current_user, current_comment, current_modified_comment])
+                modified_data.append([row[0], row[1], row[2], row[3], current_modified_comment])
     print(len(modified_data))
 
 headers.append('modified_comment')
