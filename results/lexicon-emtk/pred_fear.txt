@@ -1,0 +1,41 @@
+Input file: features-fear.csv 
+Classifier: L2-regularized logistic regression (primal) 
+Results for C=0.01 : 0.8996044 accuracy.
+Time taken for k-fold: Time difference of 3.527608 mins
+Results for C=0.05 : 0.9016375 accuracy.
+Time taken for k-fold: Time difference of 3.664534 mins
+Results for C=0.1 : 0.9037806 accuracy.
+Time taken for k-fold: Time difference of 3.894637 mins
+Results for C=0.2 : 0.9075723 accuracy.
+Time taken for k-fold: Time difference of 4.093631 mins
+Results for C=0.25 : 0.9082866 accuracy.
+Time taken for k-fold: Time difference of 3.871741 mins
+Results for C=0.5 : 0.9151555 accuracy.
+Time taken for k-fold: Time difference of 4.009547 mins
+Results for C=1 : 0.9290032 accuracy.
+Time taken for k-fold: Time difference of 3.654693 mins
+Results for C=2 : 0.9529619 accuracy.
+Time taken for k-fold: Time difference of 3.984965 mins
+Results for C=4 : 0.9757116 accuracy.
+Time taken for k-fold: Time difference of 5.539406 mins
+Results for C=8 : 0.9879108 accuracy.
+Time taken for k-fold: Time difference of 5.508754 mins
+Best cost is: 8 Best accuracy is: 0.9879108Time taken for training on test set: Time difference of 5.516677 mins
+Precision for NO is: 
+0.9203085
+ Recall for NO is: 
+0.9944444
+ F1  for NO is: 
+0.9559413
+Precision for YES is: 
+0.8181818
+ Recall for YES is: 
+0.225
+ F1  for YES is: 
+0.3529412
+
+Confusion Matrix
+     yTest
+pred   NO YES
+  NO  358  31
+  YES   2   9

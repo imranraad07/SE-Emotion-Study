@@ -1,0 +1,400 @@
+Assuming this is not an issue any more Please reopen if this is still reproducible	0	0
+I guess it is because when creating the module reasons the chunk graph is not created and module chunks is null empty	0	0
+It s ok You do not have to change it	0	0
+I did not look at what it would take to remove this timeout delay but I did make it much smaller	0	0
+I have reverted this change since it is not needed anymore this has gone back to being a debug static thing	0	0
+I agree it is odd but I think the reason is that this test is fragile it seems to look at the reloaded code which includes the test code itself so if I modify the test it modifies the line numbers in this test So adding seven lines at the top of this file altered these values by seven lines	0	0
+Although I think it is probably good practice to always add override to all concrete methods that implement abstract base methods	0	0
+I was mistaken! sweat smile	0	0
+Yes it is absolutely the same test You asked to add test with the action So I decided to duplicate this one	0	0
+Array from filesPerGroup values is an array of arrays The concat is for flattening it grin	0	0
+removed so outdated now New changes are also backward compatible	0	0
+But we cannot fix it here because vue cli should update dev server	0	0
+Closing because of inactivity Feel free to report new issue with reproducible repo	0	0
+The guidance we can provide its what we put in the error message only the plugin s maintainer can update it	0	0
+Have to wait a few years	0	0
+I think I can say with a high degree of certainty that whatever is going on in example is unrelated I removed all of the logic having to do with assignability to conditional types i e both 30639 and this PR and the example still blows up with an instantiation depth error	0	0
+The excessive stack depth in react hook form happens during type parameter inference but that is all I know right now	0	0
+Not just that not wrapping would make the compiler very very unhappy if there was more than one let oldValue inside the switch Smile The scope block here is the switch itself the case are just like goto labels A similar trap exists with C	0	0
+or can you provide some more detail about the current and expected behavior? If you can a small video or gif of what you expect to see vs what you are seeing? I suspect that the reason here is not that the movement causes it to be ignored but the timing it might be interpreted as a long click if you hold the button down and if there is no long click handler on the button then it does nothing If that is the case we should probably investigate what should happen in that case so as to still allow long click detection but send a regular click if there is no long click handler which is how I think it currently works but I am not sure	0	0
+Pls Close I figured that out already Thank you	0	0
+Could you check if this method is used? I think it is unused and we can remove it	0	0
+I agree that this is questionable I can remove support for object destructuring and leave only array destructuring What do you think?	0	0
+No Can you provide example?	0	0
+It does but the prototype is empty and concat is an immutable method so it is okay	0	0
+In any case it is a bug that this one did not work right?	0	0
+This is how logger was designed way back so any change here would be breaking esp because msg is suppose to be public method	0	0
+These two properties are not used in the webpack codebase itself but may be used by plugins Don t remove them	0	0
+No I do not have one The purpose of these 2 alternatives is to have an object with a null prototype Lookups on it would be faster since it does not require traversing the proto chain	0	0
+I have no issue with using the same format The only reason I chose this format is that it happens to be the same that Firefox uses Otherwise there is no standard for this	0	0
+1 We want this to happen irrespective of augmenting that means any time we import the properties from object function should be error so this might not happen at augmentation time 2 Will there be some kind of edge case where in valid scenario return globalfunctionType property symbol That is what if getTypeOfSymbol targetSymbol is globalFunctionType or globalObjectType	0	0
+As you can see below this forces you to reparse You already have the semantic structure reuse that	0	0
+smirking face Actually it is the result of bestDistance 1 turned into bestDistance bestDistance 1 can be replaced with bestDistance 0 1 but it is very fragile since the minimum of distance could be changed to other values like 0 05 in the future	0	0
+Please do not touch logic only types otherwise it will not merged I do mistake it should be	0	0
+I dont think we should be doing this as part of program creation We should do it only if and when we need it as module resolution is costly	0	0
+No need to add a new parameter here The config parameter already contains the devDependencies that you need	0	0
+No it is easier to let the parser accept async like any other identifier and just exclude the single incorrect case in the grammar checks in the checker The parser would have to decide on a node to return in the error case and if it weren t Identifier then the checker and emitter would have to handle that error case	0	0
+Can you add some documentation for these parameters above? I am thinking line 2322 where this currently exists	0	0
+Please put this below line 5 together with the other non app imports pray	0	0
+All of the factory constructors should specify what features of the default FAB they are overriding	0	0
+That s fair but at some level that is to be expected There s never going to be a brief page that provides all the context because there is too much context to be able to do it briefly So we could mention that someone using Flutter will be able to provide the same experience for all versions of iOS but then how about mentioning that on macOS desktop we provide text field accessibility without using a private API unlike Electron? There s so many things that are worth mentioning that if you did mention them all nobody would read it all and so you would guarantee some stuff would be missed anyway	0	0
+Agreed this should be an error	0	0
+This is not related to the name change but I want to pull it over from as well	0	0
+I don’t think there’s a great way without restructuring a lot of calling code If the node being checked is an ImportClause it has to have a name in order to get to this function or else it wouldn’t have been an alias at all it would have been a side effect import like import module IOW when ImportClause has a symbol it is the alias represented by its name	0	0
+This is not quite right if decoration! labelStyle resolves to null then use the resolved value of themeData inputDecorationTheme labelStyle	0	0
+I have never shared console logs is there a meaningful way of exporting it? or does the HAR log also have console logs?	0	0
+There is a Github Action demonstrating this issue at	0	0
+Or give the pipe some kind of output parameter which gets automatically passed back into the pipe transform function without any additional template syntax The output parameter is added to the change detection tree and when it gets modified the transform is re run I could go on but I feel like there are several plausible mechanisms with minimal no impact outside of this specific use case	0	0
+Debatable but IMO there’s nothing wrong with just showing the hint on every function	0	0
+I am waiting too	0	0
+I faced this problem too In the Crashlytics log I see such a trace but it is not clear from it where the problem begins The application was created with Flutter 2 5 2 It is likely that this is the same problem as here	0	0
+I am sure there was a good reason not to allow extractions for functions which are not declarations…	0	0
+Can t we setup a handshake protocol to determine channel availability? What happens if the application is waiting for a channel message but does not actually care to render a frame? I do not think we should use timeouts in this way	0	0
+I disagree JIT AOT does not make any difference here it is the IVY View Engine thing that is relevant Just disable IVY in the demo and it will work Moreover I have not been given any workaround how to make the code that was working with View Engine make to work with IVY?	0	0
+No those are actually different bugs they hit different codepaths Fixing one will not fix the other That s why I have opened two issues Also they have quite different steps to reproduce	0	0
+The callback does not make sense here	0	0
+This line is needless because it overwritten bellow	0	0
+Bad idea to use cjs cjs there are another module with the same name	0	0
+This comment does not make sense here It need to be before const moduleFactory	0	0
+Sorry I cannot merge this PR A while ago I merged a lot PRs adding unit tests but it turned out that this was a big mistake Unit tests might be helpful while writing the code but adding them afterwart has no benefit in my opinion They only make refactoring more difficult and does not find any new bugs That s also why we excluded unit tests from contributing to code coverage If you want to contribute to test coverage please add integration tests instead	0	0
+Bah Wasn t supposed to add anything it was a debugging leftover	0	0
+I do not think you need changes outside the BannerPlugin Remove this line	0	0
+Remove this comment I do not think it make sense to have this on by default	0	0
+Make sense but sounds terrible smile	0	0
+I do not think this paragraph is needed	0	0
+the form is not really related to the list we want to animate	0	0
+Also this is incorrect	0	0
+Hmm this one s a tough call I feel like it should either be left the same or removed completely If left the same it shows that there are two ways to bind to highlightColor that are equivalent This change makes it the same as the line above and I do not see any reason to have two lines that are showing the same thing	0	0
+This is not true anymore	0	0
+I do not understand the problem this PR is fixing I do not agree with changing Android Studio to Android Studio	0	0
+I am sorry I am having trouble comprehending your example In my eyes it further demonstrates that the issue I described exists i e assertion 0 withArgs is illegal I understand that resolving In and Out is undecidable because it recurses infinitely however my claim here is that at least the tuple overload assignment should be legal because both functions may be called only with an equivalent set of arguments In other words	0	0
+Uh no it is not? Nor is it a bug It s just an error you did not expect	0	0
+Guys I am very confused by this situation documentation examples and workarounds I am on Webpack 5 I do appreciate work that Webpack team does and would happily donate money if somebody could put clarity in this It is so frustrating that I am happy to pay just to get an answer There is of how Webpack can understand that we are importing a worker That helps us to not create a separate entry point ok But it does not demonstrate how worker and not worker would share module from a separate chunk It looks like webpack 5 cannot do that correct? Is there a suggested way on how to do that? In the example we have chat worker which imports history from chat module while example js creates a worker from chat worker The resulted bundle is 2 files main js and chat js but there is no code shared between chat worker js and example js! fibonacci is kind of the same case Lets add import of chat module into the example js like this And result of such bundle is this chat module js appears twice in our bundle inside main js and inside chat js So please can somebody give a clear answer on how can I get the result like this main js imports chat module js from a chunk like chat module chunk js chat worker js imports chat module js from a chunk like chat module chunk js main js uses chat worker js and staff works Smile Now imagine a situation when main js imports 5 different modules including soething from npm while worker js includes 5 of the same modules What is the webpack config js magic should be written to put those 5 modules in one single chunk? Not all of those modules are from npm some from my project they are from different folders All my attempts of chunk splitting optimization do not produce workable app Right now I have to live with chunks which has huge portion of module duplicates because worker imports bunch of staff and the main app imports same staff Do I have to change all imports to dynamic? Do I need to do that only in the worker or I have to do that in both places? and after ask webpack to split only async chunks? Which functions should I use for that? How I should direct webpack to produce particular modules I want into a single chunk? Update From my current understanding webpack would figure out chunks automatically only if we import same modules dynamically const fibonacci await import fibonacci If we do so in the worker and in the main app fibonacci module would be in a separate file Is that correct? But why do we have to do that not only in the worker but also in the main app? Why cannot we do await import in the worker while have static import in the main app and webpack would understand that?	0	0
+From what I have seen so far in our codebase other node properties that are there for error reporting only just have a comment saying so confused face	0	0
+Any updates on this? I am implementing a flutter application with barcode scanners the soft keyboard on screen is really annoying	0	0
+Any news? The workaround ebove do not work Is this a snap related issue? Doctor said	0	0
+same problem here ubitechdevelopers did you solve it?	0	0
+question is this the correct approach will it ever be ?	0	0
+What does this do with Angular? You should ask this on stackoverflow com	0	0
+Please provide reproducible example	1	0
+No bugs here again you have overlapping in rules so it works as expected	0	0
+As suspected you did not follow the specific recommendation This issue is about not	0	0
+I am not saying Yarn 2 is bad If you zoom out a little bit then it is so hard to know which trend to follow and which one to ignore Let s imagine the TypeScript team adds a flag to support YarnPnP Then another tool comes and makes the same argument the we are better or faster and then TypeScript cannot say no as they have already committed in the direction of adding flags I have seen this trend a lot less in other more mature ecosystems in comparison to JavaScript Also the arguments should not be considered against something or someone Yarn is a fantastic tool created by great people I am just talking about the idea of adding flags in general	0	0
+This change is pretty much single handedly responsible for the js emit changes in this PR Symbol iterator and it is ilk are not simple copyable expressions since technically accessing it could produce side effects like any other property access Now at some point we added Identifier s to isSimpleCopiableExpression s domain which is not technically safe since the identifier may get reassigned between the copied references so maybe property accesses which only consist of Identifier s would not be terribly unreasonable either person shrugging	0	0
+Does this file really belong to this PR? It seems unrelated confused face	0	0
+Hi this is not a flutter framework issue kindly file the issue here Closing this as it is not a flutter issue	0	0
+I should add that the reason this is so annoying is the cascading effect of telling me to install tslib and then warning me about settings when I am trying to get other work done And then adding injury by not giving me a click on this to avoid this message button with it all seeming to be tsc related A very bad UX	0	0
+Issues with third party plugins need to be reported to their developers You should verify with the developers that the Firebase background handler is designed to allow calling plugin methods e g is not using an isolate	0	0
+To expedite the triage process we need everyone to follow the issue template and instructions When you clicked Create New Issue the issue form was pre populated with a template and some instructions We need you to read those instructions completely follow them and then fill in all the fields in that template We are not able to assist with issues that do not follow the template instructions as they represent a significantly larger amount of work compared to issues which are correctly specified Thank you for understanding	0	0
+takeover dispose I understand what you mean by takeover however it does not hurt to be a little more explicit	0	0
+Please do not open issue using an issue comment from other issues If you are facing an issue please use new issue and provide atleast some of the information asked in it so that we can properly address the issue Closing from here as no information is provided	0	0
+I blame the autoformatter	0	0
+Yes We need to add this test coverage It s just not urgent neutral face	0	0
+And here dumb template literal	0	0
+No need to like it because the problem on your side you emit two files as you can see in the error it can lead to the problems but you ignore our issue template so I cannot help you respect time of other developers The problem can be in a plugin or a loader The problem can be with invalid usage of assets modules maybe you real do multiple request which have different casing Nobody knows If you provide how you can reproduce your problem I will show your the problem place and how to fix it	0	0
+Bug without example I cannot help	0	0
+oh my god explanation of official documents waste eight hours of me Why is not there a case to explain this	0	0
+Sorry but this is really dumb Why would developers want BOM in the middle of their output when it makes the Javascript unparsable and therefore unusable BOM only makes sense as the first few bytes of a file as stored on disk It never makes sense to include BOM in the middle of a file This is utter nonsense If you just do not want to fix it then just say that you do not want to fix it Making up some bogus excuse just makes you look stupid On Mon Jun 28 2021 at 3 49 AM Alexander Akait wrote	0	0
+Please respect time of other developers we do not know your version code configuration etc so it is impossible to help	0	0
+I do not know why it is hard to use the issue template and provide example how we can reproduce this will not only make your life easier but also reduce the time spent trying to guess and will also save your nerves	0	0
+Well if you tried it you would know	0	0
+Same problem with the same plugin it is related	0	0
+Not sure I understood your answer much less the reason why you closed this so abruptly Would you please elaborate	0	0
+I am sorry but this is a rubbish reason Typescript includes features like private constructors yet you say that the complexity of different getters setters is too high and steepens the learning curve Like somebody mentioned here it is hard to make should not be an argument against a standard in most modern programming languages Your suggestion to use private protected is not really helpful either it makes the code less readable and it adds complexity to it	0	0
+Hi thanks for your contribution but we cannot review this because you didn’t follow the contributing instructions in or in the PR template	0	0
+You know better than not to fill out the issue template face with raised eyebrow	0	0
+It s anoying me specifically when I want to set it as default value in constructors	0	0
+Please see flutter dev community for pointers to other resources intended for general discussion Closing as this is neither a bug report nor feature request for Flutter	0	0
+Please provide a complete minimal reproducible code sample that we can directly use or a sample github repo that we can clone	0	0
+In that case I would advise you to please file a separate issue with the exact steps and logs to reproduce the issue Because this issue is about existing apps Thanks	0	0
+Hi I noticed you used Provider plugin in the sample code For the issue to be workable it needs to be reproducible with a that doesn’t include 3rd party plugins or complex production code and is properly formatted Please provide such sample Thank you	0	0
+But this does not make sense you actually importing same module dynamically twice in two different javascript files	0	0
+I added that and re served the app but still having the same issue	1	0
+pouting face Introduced issue thanks to merge conflicts Will fix	0	0
+Brilliant arguments but I’m afraid nobody is listening What would it take to bring this to TS team attention again? a petition of some sort?	0	0
+This is not the first issue where all this extension thing is causing confusion One was already been shutdown by Microsoft The best part is out of ignorance the Typescript team thinks its them only who knows better and everyone else is stupid This will blow up as more people will start moving to ESM	0	0
+Could you please share a minimum reproduction?	0	0
+can you provide an example?	0	0
+I see that is too bad thank you very much for the update and for running the presubmit If I can help in any way please let me know slightly smiling face	0	0
+my bad did not look through closed ones thanks for the explanation	0	0
+This is a nice way to wrap up this logic and good explanation in the comment above thumbs up	0	0
+thanks a lot that was indeed the problem Onboarding as a first time contributor wannabe is apparently not as trivial as expected	0	0
+The solution via dependencies seems to work! I tried it with yarn within a yarn workspace environment and I did not experience any issues yet So I see this issue as resolved Thanks a lot again your explanation was very helpful!	0	0
+great point! Thank you You are right that the testing components today rely on JIT Usually not because they are dynamic but because you need the flexibility to declare them inline usually within functions of a test file as your example shows With the right compiler and API modifications we should be able to support this with AOT thanks to Ivy This change could be rolled out with an automated migration so nobody has to rewrite their tests But as you bring up this flexibility of testing components means that you could dynamically create a template or modify the component metadata e g use string concat and interpolation to create a unique template for a bunch of components created within a loop that wraps an it or describe This is not the most common pattern but I would be shocked if some codebases did not rely on it I currently do not have a solution for this one Maybe the composition api could be it but automated migration from unconstrained TS JS code that generates a component to a component built using the composition API would be tricky and not 100 reliable I do appreciate bringing this up though This is exactly the kind of feedback we are looking for	0	0
+I am updating the docs to be more precise and getting rid of the macro thanks for the suggestion	0	0
+yes jenkins build is successful thanks for your hard work!	0	0
+thanks so very much for the approval smile if possible I would love it if could also have another look if possible as he did help a lot in this PR and also I believe he has not checked out some of the latest fixes I made slightly smiling face George if you are just sick of this PR that is fine too it has been going for a bit sweat smile	0	0
+This looks promising I will try it out thank you!	0	0
+If it is unclear what the benefits are then I think closing the PR is the right thing to do at this time Thanks again for looking into this though! Your contributions have been tremendous hundred points	0	0
+No worries thanks for this!	0	0
+Right I didn t as this was originally just a config change smile Thanks for the guidance will fix	0	0
+PS I am fan of yours I love your content out there! smiley	0	0
+And just confirmed it is totally fixed wow thank you	0	0
+That seems to have fixed the problem thanks!	0	0
+I liked this suggestion I think the philosophy of language should not be that uncompromising We already have enum and namespace that are outside the rule	0	0
+thanks very much! take care have a nice weekend!	0	0
+Awesome! Thank you two for the code review and triaging my first PR!	0	0
+Aw thank you so much! I really appreciate that insightful explanation grinning face with smiling eyes I now better understand what assumeTrue means Super helpful !!	0	0
+Thanks for your contribution	0	0
+Thanks so much this works great smiling face with open hands	0	0
+awesome I will do that then! thanks a lot! slightly smiling face	0	0
+man facepalming thanks for noticing this	0	0
+Just updated the guide Thanks for the catch!	0	0
+Thanks! And thank you for taking time to think about this stuff It is important that we try our best to get it right	0	0
+I did not know about this thanks for the help!	0	0
+Oh ok Thanks for the explanation I see that now I had imagined that if you imported foo you would always transform If you do not want the extension do not import That makes it very straight forward	0	0
+Thanks for the tip indeed it does! I am still missing the tabular view as shown though!	0	0
+party popper thank you for your determination and brilliance in finding a resolution to this really really annoying issue	0	0
+Wow thanks For us that reads ThemeData a lot this is really useful and nice! blue heart	0	0
+Awesome! This looks good Is there a test validating this? There should be a test that verifies we do not end up duplicating a currently showing snackbar when we push a banner and vice versa in order to validate this logic and make sure we do not regress later I think once we have that this is ready to land! party popper	0	0
+You really do not need to apologize You are doing an amazing job tackling non trivial problems all over the place person lifting weights Regarding the legacy unit tests saucelabs job failure It looks like a flake I have restarted the job but do not worry about it for now	0	0
+God I really need this feature!	0	0
+It would be nice if one could vary the iconTheme or labelTextStyle based on MaterialState hovered It would be OK to leave that out of this PR though	0	0
+It would be nice if color and colorScheme were colorScheme primary and colorScheme primaryVariant We want to encourage developers to use the color scheme If this function was defined within the build method you could refer to two additional local color variables that were based on the colorScheme like odd evenItemColor	0	0
+Is there any news on this? I think this is highly relevant for component based architecture with inputs which can arrive and change at any time In my case it is almost always to trigger some api call once all input values are present and then whenever either one changes My solution is to use two or more local BehaviorSubjects and a combineLatest to accomplish this behavior BehaviorSubject for use cases where I need to access its current value synchronously otherwise a ReplaySubject 1 is also fine	0	0
+We should also have tests with multiple occurrences of different comments to ensure that all of them are removed	0	0
+would be good to have more information here e g mentioning the argument that you are adding to make these fatal what kind of thing could be a warning vs just ordinary output how rare warnings should be etc	0	0
+This would be so incredibly helpful I am currently running into an issue where there are collisions from a 3rd party library but it is not coming from my code so I have to figure out where the collision is coming from Seeing file names and paths would be awesome!	0	0
+Would love to have more documentation on this Especially handling runtime localization and about building libraries with translations	0	0
+I am afraid that it is not possible since we are using here the context will change Either to remove arrow or to refer it via another const variable	0	1
+Hm I just realized that currently we do not support linenums when skipping prettify face screaming in fear I think it is fine for now Maybe log a warning if getLinenums returns anything other than false with language none In the future if the need arises we can add support for linenums	0	1
+My guess is no since implementing such a feature can compromise the security of your app and also it could lead to your app being rejected from the store You might think it is a good idea to implement it so it can be used for development however since this is a work around you will not control it will be easy to forget about it which may lead to your app being rejected	0	1
+I have some fears that this will not catch stuff like	0	1
+Am I missing something here? How could this possibly return 1 ?	0	1
+And yes there should be tests face screaming in fear face screaming in fear face screaming in fear	1	1
+Thanks! Now if you don’t mind can you restate your actual behavior and expected behavior in terms of the file names and identifiers used in that repro? I had a little trouble following your hypothetical example	0	1
+I worry about an over reliance on Actions and Intents when I see ReplaceTextIntent UpdateSelectionIntent etc used here Is there a use case for needing those things to be overridable? What I am worried about is the increased mental load that a developer working on this part of the codebase has to bear 1 I cannot be certain who will respond to this Intent or even whether or not the EditableTextState will receive it without knowing what overriders are in the widget tree 2 These Intents can be invoked from anywhere with the relevant BuildContext Do these two features benefit this code in any way?	0	1
+Yes with immediate covering the used before assigned error it makes more sense My concern was whether immediate would not cover these scenarios	0	1
+Please correct me if I am wrong – you are using something like to embed Flutter as a module In your test you have a script or something to set up the app and transition to the Flutter screen after which you want to have code on the host connect to and run the integration test It s not possible to do so without some elaborate hacks Integration Tests require test code to be built into the app under test It sounds what you could do is create a placeholder Flutter app that hosts the flutter module that you are using with some mocks to setup the app into a state suitable for testing Otherwise you are advised to look for something like to test the complete flow	0	1
+So this is a little bit worrying By making this abstract the noImplicitOverride seems to have no effect on the method in the child class which sort of defeats the purpose of this compiler setting right? I e if the base class removed the abstract method there would be no indication to update the child class	0	1
+My concern was about how we will have non generated files which import the generated file And I am worried that its going to make intellisense go crazy	0	1
+If your analysis is correct then it is breaking any app using SRI and long term caching regardless of whether it is using our plugin or some other way to add SRI so there is little we can do about it	0	1
+Little concerned about adding and removing watches here since this cache is cleared between the open files it seems like we may need to create and remove and again create same kinds of watches over and over if there are no watches for that directory eg there are no closed script infos for that node modules folder in any program or something this may be costly on linux where every recursive directory watching needs to go traverse the directory and create watches since there is no native recurisve watching support	0	1
+Isn t this a breaking change? Can we get away with it?	0	1
+I guess my concern is that it sets a precedent where somebody could see it and think that it would be fine to use in core	0	1
+it looks like a legitimate failure	1	1
+I am still a little concerned that this is basically a one time warning that can easily be missed by people when they are running the automated migration	0	1
+My concern is that more new arrtibutes may appear in html in the future which potentially may overlap with input names on your already existing components and it may break their behavior	1	1
+You should not apply ModuleConcatenationPlugin plugin directly you need use optimization options double usage ModuleConcatenationPlugin can break code	0	1
+It should mean that it would have rejected the existing dill files and just started over from scratch If not we would have to fix that	0	1
+I am seeing this failure which looks like a timeout but I do not have any idea how to go about trying to diagnose that? It appears to be timing out on a flutter pub get in the package?	0	1
+FWIW I’ve always wanted this feature but I’m not confident that a PR would get accepted and I would hate to see you burned by infinite bikeshedding as a first time contributor If this feature is your passion don’t let me stop you from implementing it but be prepared that a PR for an “awaiting more feedback” issue may or may not ever get a proper review If you are just looking to start contributing to TS anywhere I would encourage you to search for “help wanted” and “good first issue” labels where you’re much more likely to get support with a PR from start to finish	0	1
+Is this widget really providing enough value to break it out as a building block?	1	1
+I am having a hard time doing this Since previous methods were highly dynamic I am afraid of breaking anything	1	1
+This one looks a little weird there are some others like it in other tests too thinking face	1	1
+Hi sokra and pastak I also encountered this problem Are you going to fix it soon?	0	1
+I am worried about the precision of 0 0000001 It s probably enough to make it 0 01 since that is smaller than 0 1	0	1
+do you have to use any ? it is always concerning when we give up on type safety and add new anys to the code base	0	1
+Specifically I am less confident in the second commit than the first AFAICT it could only return true if a recursive call to itself returned true and all of the recursive base cases returned false	0	1
+I don’t think this is a sufficient condition This is a really weird case because there actually is no symbol for import meta but because completions works with symbols it creates a dummy symbol for it on line 1593 and presumably the same crash happens with new target The least we can do is keep this kludge private to completions ts and not ask the checker for the type of a completely made up symbol with literally no context The checker knows how to get the proper type for import meta and new target from a node so I would suggest making completions ts somehow aware that it needs to use a different method to get the type of these and able to trace these dummy symbols back to the nodes they came from	0	1
+Hmm that does not reveal anything useful I am afraid I am a bit out of ideas but you may want to try adding pathMatch full to the empty route in the lazy module	0	1
+There are two separable concerns here Is syntactically unreachable code code which we can be certain cannot execute allowed? That is the only thing that allowUnreachableCode speaks to What should be done with type unreachable code code which the type system believes will not execute? That is the realm of assertNever Keeping these concepts separate rather than conflating them is the simpler design	0	1
+Not that I know of Still an open bug for my team	1	1
+Yeah that is not right The issue here is that we bypass caching of relations for small unions and intersections but that bypass also causes us to loose a check for deeply nested types that would have stopped the recursion It used to not matter but after 41821 it does We need to revise our logic such that we can bypass caching but still check for deep nesting	0	1
+This problem is still happened on macOS Monterey 12 0 1	0	1
+It is really bad at maintaining a decent frame rate This optimization would likely not help a lot but could help some may still have traces	0	1
+Also a breaking change right?	0	1
+I am not saying we do not want to enable this kind of thing I am just saying we have little interest in one off PnP specific things when a more complete approach would render it redundant and allow for more use cases to be filled and that this model specifically follows a pattern that we do not consider particularly usable we should know it is similar in setup to our existing language service plugin architecture that does not layer plugins easily is not easy to develop for is not particularly easy to use is not well documented and and was rushed out to support a high pressure request from angular We ve had requests for custom resolver behavior for approximately forever and would like to do right by those and not repeat the mistakes we have already made in a different context	0	1
+I myself also think that decoupling the material and also the cupertino library from the flutter framework would be a major benefit for the whole ecosystem All the libraries get more and more complex just to support legacy m2 styling Also things like the m2 snackbar styling are still opt in because of that It currently is quite painful to create a new flutter app that uses all widgets in its modern styling as you have to opt into so many things And also having to fight with all the old m1 properties and major inconsistencies everywhere I think having a material library that is versioned independent from flutter enabling developers to update the flutter version of old maintenance projects without the need to handle breaking changes in the material library would be a major benefit for everyone as it not only would make the life of each maintainer much more easy as breaking changes do happen over time but also making the life of everyone else who wants to have the modern styling so much easier as the material library package could just have breaking changes following semver etc Altogether I would say especially if we are trying to think long term the benefits outweigh the costs by far So I would very much recommend to fix this rather soon then late so that we do not have the same conversation again when materail4 arrives Smile	0	0
+Nice this is more slick thumbs up	0	0
+The are allowed as identifiers and they are wonderfully short and clear but OK	0	0
+Ahhh yeah I see what you did there thinking Ok thanks a lot smiley 1	0	0
+I agree it is too much I was trying to satisfy all the variations in the related issues that came up I will trim it down	0	0
+Bad link person facepalming here s the correct link And yes I think you are right The linked test should go to expression completion because it is an EmptyExpression and this test should go to literal completion i believe crossed fingers We should keep both tests since they cover a different use case	0	0
+Yes I think this makes sense We currently do not use the top level symbol name at all	0	0
+I think we are in agreement The doc author should be able to rely on a SME or the tech review TR stage to ensure the code example is accurate for the placement in the docs	0	0
+I fully agree with and I think we should try to focus on the actual proposal which I agree would be really nice to have	0	0
+Yeah that would sound the most reasonable to me	0	0
+Yes you are right I moved the code to comments	0	0
+Good point I am ok keeping it like it is currently implemented Since it is a part of the testing logic it has no impact on bundle size so this optimization is not important	0	0
+Yeah It feels a bit awkward but if it is okay we can shipit	0	0
+hmm yes I only moved the code When this code was written I considered unset module type for backward compatibility	0	0
+Yeah I agree! Moving	0	0
+Sorry you answered that in the other location—36s to 10s thumbs up	0	0
+Yes I think this is a good change because it is preserving the parent indent	0	0
+Good catch! Removed	0	0
+Agreed I cleaned this up a bit and added some comments	0	0
+Thanks for creating 89045 and 91981! We d be happy to merge either of these PRs if the comments there have been addressed	0	0
+Anyway the syntax change is fine	0	0
+Absolutely But since it is the only case where it does not return a string it is possible to bypass the call and hardcode the result	0	0
+That sounds like a great compromise thanks If we end up needing them to be overridable for your TextInputClient work or someone opens an issue with a good use case or something then I am all for opening them up to overriding You re right about point no 2 it is currently possible to look up the EditableTextState and call methods directly on it in a similar way to invoking these Actions	0	0
+Ok thanks for additional info! I was thinking if it makes sense to put some of this info into the comment so when it is the right time to fix that there is a context available Up to you whether it is worth adding that or not Smile	0	0
+Are you planning on adding a note with the live example download example link? Those are great! Oh! And that reminds me remember to add your app to the example apps list Yay!!!rainbow	0	0
+They are quite similar so I thought they can live in the same folder But it is not a big deal I can create a separate case Interesting that I did exactly that in the first place but then I thought why not together? grinning face with big eyes	0	0
+Argh angry face You re right disappointed face OK how about this It uses look ahead instead of look behind and thus should work everywhere even on IE face with tongue	0	0
+I do not know if it is true but 100 spec compliant have it MDN documents it it smells like a standard you can safely count on winking plus it is way faster than new Promise in all native implementations right now afaik	0	0
+I do not like this name but so far have struggled to come up with something very good controlsBuilder was aptly named grinning squinting face	0	0
+ah ok great to hear! thanks! smiley	0	0
+Yes and no beaming face with smiling eyes The Babel plugin is available as an export from angular compiler cli linker babel and that can be integrated into e g a custom Webpack build by registering the linker as a plugin for We re planning to add a new export for easier creation of the linker plugin	0	0
+That s attention to detail Happy	0	0
+my idea was indeed to be very loose in the tests and basically just match that anything except spaces and newlines and whatnot and just test that aspect in a specific decidated test got inspiration from here stuck out tongue winking eye heart eyes but it depends on what regexes we end up using I guess I think you are suggesting that each type of comment can have different newlines etc so we should indeed test that in the various tests? I sort of liked the idea of here basically just testing the actual content of what we get and not caring about spacing whatsoever but if you do not think it is the right approach meaning that we cannot just delegate it all to one or a small number of dedicated tests I can be more strict in the various tests as you are suggesting slightly smiling face also if we are talking about strictness would you reckon we can also try to match the exact number of spaces instead of using or would that make the tests far too brittle?	0	0
+right thumbs up I was confused and though that it was mutated below Thanks thumbs up	0	0
+hmm no but that was a useful settings i have been looking for thx It solved the autocompletion when writing but it did not solve the auto converter quick fix turning cjs to esm importModuleSpecifierEnding should always be on when writing ESM modules	0	0
+awesome! I am glad you know about this trick	0	0
+Ha! I knew you would say that face with tongue No it is not necessary to use backticks Happy to switch to string concatenation	0	0
+I think you cannot mention this often enough as it outweighs all the counter arguments in my opinion grinning face with sweat	0	0
+Sounds good In addition we want to CP to hide the web engine framework tests on release branches	0	0
+It was a problem with the harness spreading away non enumerable properties from compilerOptions Fixed thumbs up	0	0
+I did look into it initially but was not sure whether it would be the best place to put it However I tried moving the code there and it still works as expected so I think it should be fine Happy	0	0
+I think I prefer that to show the shorthand it must be only boolean and braces for everything else This is true for a type boolean string for example which will use braces as well Nonetheless I think there is a argument for adding as little as possible as in the case of if any of the types is boolean If you feel this is a better approach I am do not mind changing it	0	0
+Got it Thanks for your reply This is my first PR to angular so i am facing some tooling related issues Let me fix those and upload a new commit	0	0
+Fair enough smiley How about	0	0
+good point Not sure if it is worth updating the VE code but could probably do that instead of having the comment here man shrugging	0	0
+I am pretty sure it was drive by I assume your change does not introduce a new usage of realpath so we should be fine	0	0
+I would say this is good expected behavior If You want to validate if the input value is a numeric add a validator for it custom or pattern with proper regex	0	0
+Ok I will need few more days the results I got during manual tests with chrome performance profiles are very inconsistent In fact I did not reproduce the results from Friday I am going to push the upgrade into our automatic performance tests It ll take some time but should give us better results It s hard to believe that after few months of investigation it works as it should grinning face with smiling eyes I will let you know after the automatic tests end	0	0
+That seems totally plausible to me not sure if there’s some reason why it’s not implemented like that I’d be open to that but would want to bring in a couple other reviewers to help think about edge case implications of it	0	0
+This currently seems to be a limitation of the framework to work properly with UiAutomatorViewer as mentioned in the original linked I suggest you to share your findings in the linked issue for better tracking	0	0
+I updated the tests repo to point to a newer gallery commit and I think hope that solves the problem as those properties are no longer referenced in that file at all now	0	0
+that might be useful to improve but could you describe the perf impact of getting the source here? my expectation is that originalSource is a RawSource that already had the file in memory from when we parsed it in the first place	0	0
+Understood Will try and make a minimal example	0	0
+we are currently working on a potential design that will be put out as an RFC in the not too distant future	0	0
+I assume that you will go through and tidy up all this commented out stuff before merging?	0	0
+Unfortunately this is not enough to get the correct emit but its the right start I tinkered with your PR locally and I think I have a solution that builds off of what you have done here Essentially you need to move the isCallChain test out of the call to updateCallExpression and call updateCallChain in its own branch In the new updateCallChain branch you move the ? from the original call i e this x? to the new property access for call needed to preserve the correct this i e a? call this I can see if I can push an update to your PR with this change shortly	0	0
+This was actually causing this test case not to be executed!	0	0
+This issue was fix in It can be closed now	0	0
+You are right! I think it is ok to keep as it as it is a standard thing that we do across the repo Thanks for the clarification	0	0
+Thank you for the clarification I removed the redirect and the test for the redirect I will reach out to discuss this more as time permits	0	0
+Cheers! Just noticed the same bug myself	0	0
+You should either pass both the id and ngRouterPageId in here and modify the state inside the function or do both of them outside the function and not modify state here at all The half and half nature is a bit awkward right now I think the first option is nicer	0	0
+This is awesome news! Could you link to the implementation or discussion of this feature?	0	0
+I think your review will be helpful grinning face with smiling eyes	0	0
+I made a similar comment in the recreation README but worth mentioning here My usage of yargs is simply because it is the first package I ran into with this issue while testing out 4 5 beta It is a very popular package so I suspect this issue could would pop up for many users when 4 5 is officially released If my diagnosis is correct this is by no means an issue with yargs itself and could be recreated with any other package that 1 Uses package json exports field 2 Exports a file under some path not just root index 3 Does not include native typings and relies on something like	0	0
+Personally I would extract this into a variable or a local helper function or maybe just add a comment so it is clear that the reason for this is to check for case sensitivity on the filesystem	0	0
+To share it across more than one affected file it would have to be on the state I am going to try updating it in parallel with seenAffectedFiles	0	0
+I was initially tempted to do something overly clever for this but I suspected that some sort of state machine would be harder to read understand than collapsing the state into a horrible nest of if else blocks But I am open to suggestions on how to make this more elegant looking at you	0	0
+Would it be any cleaner if this method were added to The goal of that class is to simplify things by providing a read only interface instead of the full RenderEditable You probably have to use RenderEditable anyway though so maybe it is not worth it here Just wanted to bring it up	0	0
+No problem I am glad I can help	0	0
+Oh nice!! I have seen that syntax floating around wanting to try it for a while raising hands	0	0
+Sorry for my long response time Here is my suggestion for the API modifications I would add a new field to NgUpdate potentialUpdateAvailalbe Observable PotentialUpdateAvailableEvent This should meet the a new version has been detected to exist but is not available to use yet and a new version starts downloading event At least for me it looks there is no need to differentiate as downloading starts immediately after the potential update was detected Same is for a new version finishes downloading which is basically the same as a new version is available to be activated Regarding comment I guess sticking to Promises is fine here as Observables would require a call to subscribe But I can agree on adding a meaningful return value I would prefer a signature like this checkForUpdate Promise UpdateAvailableEvent NoUpdateAvailableEvent UpdateFailedEvent Throwing an error in case of failure would force applications to catch it which would be definitely a breaking change And for activateUpdate it could look like this activateUpdate Promise UpdateActivatedEvent ActivationFailedEvent TBH I am not sure if returning the events is the best way here If an error is thrown in case of failure returning a boolean value would be possible as well gkalpak WDYT?	0	0
+I certainly will not get to it any time soon so feel free to submit a PR wink I will be happy to review and help with questions	0	0
+Thank you My team is looking into this!	0	0
+Perfect thank you I know enough to start testing I will keep you up to date on my findings	0	0
+it looks like you did not have a chance to get back and investigate the issues mentioned above I am going to close this PR since it is not ready for review but we are in general very interested in contributions so if you ever get back to it please do not hesitate to submit a new PR! Thanks!	0	0
+can you assign this ticket to me I can help in this	0	0
+that is awesome I have been needing this for a while	0	0
+I have had a think over the weekend and I have another idea for opting in cedvdb thanks for the input! I think the goal is to give folks time to migrate to the new default first before making the final switch	0	0
+I’m not trying to be difficult here — I do get that this is kind of supported and I’m just pushing for a slightly cleaner simpler more shareable way of doing this so I totally get if there’s no bandwidth for something like this	0	0
+I have a plan to do some additional work on these topics your efforts are making that work much easier ! As the merge conflict caused you to revert these sentences back to their original form I am fine if we leave them as is Let s not have perfect be the enemy of good!	0	0
+Adding this component in bootstrap is my stupid mistake I remove CheckComponent from this example and it is worked! Thanks!	0	0
+Apologies I should have been more specific with my comment What I meant to say is that Flutter plugins and even pure Dart packages using FFI are in need of being able to detect a hot restart as much as plugin s using platform channels Given this is a development time only issue I would be happy with as simple a mechanism as possible The effect I am trying to fix is that I am making use of a native library eg C Rust etc which holds one or more resources eg sockets bluetooth audio etc which need to be released on stop On Linux desktop as an example this happens if the hosting OS process is destroyed during debugging when the Flutter app is stopped but does not happen during a hot restart I have to be honest and admit I do not know the details of what happens during a Dart hot restart but it seems to be that the running Isolate s? is killed and then started again? Any how the effect is that Dart side references to the native library are lost while the native library continues to run potentially on its own thread s To fix the above I would request having some sort of lifecycle sync callback that can be registered by an app to be called prior to hot restart taking place This would allow me as the app author the chance to call any required close destroy stop etc on native libraries or for that matter platform channel plugins that I am using to have them cleanup their resource usage This then does not impact or require changes from existing native libraries as they would be expected to already be providing some sort of cleanup resources API and platform channel plugins do not need to be aware of this API its just something a plugin user knows to make use of in order I know this can potentially block hot restart but as the app author I will have had to explicitly regsiter for this callback and then do something to block that callback completing so thats on me as the app author plus I have already experienced existing bugs that cause hot restarts to stall so its not something that would block dev work but it would at least give app authors that are making use of such native libraries and platform channel plugins the effective use of hot restart again Ideally I would expect this being done upstream in Dart because hot restart is a Dart mechanism and there is an already https github com dart lang sdk issues 42679 but I understand that pure Dart usage is a niche usage compared to Flutter so I would be happy just for a Flutter specific implementation	0	1
+Hey guys any update on this problem? Or is it still not triaged\prioritized? Wondering because not just this is a concerning problem for anyone who actually develops desktop application with Flutter but also a major fun killer knowing that your app will end up draining quite a lot of RAM is really discouraging	0	0
+yep bug disappointed Feel free to send a fix	0	0
+Still not happy with this To make the warning cache correctly it has to be in module warnings but I will try changing it myself	0	0
+unfortunately there can be many problems here I cannot help without repo disappointed	0	0
+Let s close temporary reverted disappointed will be added late again	0	0
+here we are! smile tada But actually eslint seems to not handling very well the large amount of files to check here and it is so much slower than tslint in this instance whilst this check takes tslint around 40 seconds on my machine eslint takes around 4 minutes disappointed and you can see I am ignoring all possible files except the ts ones This is rather unfortunate but I guess it would still make sense to move away from the deprecates tslint what do you think?	0	0
+Thank you for your answer this parameter was just a test i forgot to remove it in my post It does not fix the problem I will open a new topic in the webpack encore repo	0	0
+well that is very disappointing	0	0
+Well that is a disappointing decision I do not at all agree with the reasoning you already coupled Angular with rxjs years ago and kinda left those actually utilizing it in the middle of the road refusing to address the pain points for years until finally giving up altogether I am not moving away from Angular I am way too deep in but man it is sad to see what has become of this framework and I have been here since the early alphas! the excitement is all but gone I cannot remember the last release that actually improved developer quality of life I really hope that at some point Angular will at least provide enough extension points to properly integrate features such as this one without having to resolve to hackarounds	0	0
+I accidentally rewrite your changes using force sorry disappointed	0	0
+Apparently a breaking change in webpack dev server which is still in beta disappointed	0	0
+This does not reproduce for me anymore in v12	0	0
+for some reason clang format wants it that way disappointed face I am extracting the input into a variable to make this more readable	0	0
+I do not think we want to expose Angular s management of styles as a public API unfortunately	0	0
+Closing this due to lack of additional feedback since it was opened	0	0
+I already see what I did wrong	0	0
+I was actually working on it sorry I forgot to mention that earlier	0	0
+Thank you for your reply So did I an implementation mistake and is it not a bug? Is it possible to lazy load many modules by other lazy loaded module?	0	0
+ahhh ok sorry I was not sure what OOC stood for and thought it was Out Of Context in a sense like what are you doing? you should not do stuff like that! sweat smile google did not help as that was one of the first results I got sweat smile I finally got that it stands for Out Of Curiosity sorry not sure how I totally got my wires crossed sweat smile When I see your OOC s now I will not have to be scared anymore! rofl	0	0
+Even that was a little bit off the real example should use a heterogeneous array and not discuss literal types I guess taking notes during the discussion can throw me off a bit grinning face with sweat	0	0
+damn sorry I missed the last line of your comment and indeed thought I fixed this one! sorry!!!!! bow	0	0
+Sorry I forgot to use the 80 chars in my own suggestion should be	0	0
+Sorry forgot to provide babel configuration information babelrc	0	0
+Good idea but sadly we cannot use any dependency since the setup script runs before dependencies are installed	0	0
+Ah sorry I thought ScaleUpdateDetails was constructed in update nvm	0	0
+Sorry I made a mistake when writing my previous message Trying to import the Footer component using CTRL shortcut	0	0
+Unfortunately we have reports that the proposed workaround does not work on all samsungs So we have a higher demand on a solution for the core issue	0	0
+yes sorry I honestly was unsure what to do about those because the can be before a line staring at a certain column and ending after a line ending with a different one I think I will just put them with the same number of spaces regarding on the next previous line does that sound ok? sweat	0	0
+I see that is unfortunate I think I forked off version 2 0 2 which works for me So you can start your search there if you would like Good luck!	0	0
+PS who and why decided to allow keyframes to be strings??? sob	0	0
+Let s ignore this for now and take care of this when finished the other problems	0	0
+Is this still on the horizon for Angular 13? I have not seen any PR related to this as of yet and nothing in the current next releases	0	0
+Patiently waiting for any updates One idea that I had was to add AdSense to an empty HTML page and then add Flutter app to the html page Would that work? Or would the html page get rejected due to lack of content because AdSense would ignore the Flutter app?	0	0
+Doh Sorry for wasting your time I will update now and move on to the test suite That may take a few days as I am quite busy atm but I will get there	0	0
+I do not really understand this test is not Your example app code the phrase you want to see?	0	0
+Bah! Sorry fixed Dusty keyboard	0	0
+We do not try to infer type predicate signatures users always have to write them out deliberately and cannot rely on contextual types But even if we did rely on contextual types we have another issue with class members not using them crying face	0	0
+You broke my heart	0	0
+Unfortunately this was pulled from v12 due to CI breakages and is not actually in 12 2 12 43965 is pending for v12	0	0
+Ok sorry but why do i get this? how do i get my Flutter SDK updated to current version ?	0	0
+Nit Order import alphabetically although import order is already a little messed up here downcast face with sweat	0	0
+Sorry the mapped type was not relevant to this problem so I removed it to simplify problem BaseTheme Record string unknown BaseTheme	0	0
+This one actually seems kind of unfortunate	0	0
+Yes sorry for the confusion!	0	0
+Yeah I do sorry Busy days vacations season slightly smiling face	0	0
+There is not any guidance for this from Material unfortunately It does seem like a tricky problem to solve An alternative could be building something custom with a dropdown menu that only shows the allowed times for hours minutes	0	0
+Unfortunately there is not much we can help with without getting more info It is unclear how the app is set up and what might be causing the problem or even what exactly the problem is For example how is the server configured how is the ServiceWorker configured how is routing configured etc BTW you can easily check what the ServiceWorker puts in cache after you visit the app by opening the browser s DevTools going to the Application tab and looking under Cache Storage I am going to close this issue since there is no clear indication of a problem with Angular and the issue is not actionable in its current state Feel free to continue the discussion below though Also happy to re open and investigate if you can provide a minimal reproduction of the problem	0	0
+I do not understand your problem args is Record string any you can use const myMode args as Configuration	0	0
+Do you understand that it is impossible in some cases or can lead to increase size of bundle?	0	0
+Answer above sorry without any more information we cannot fix it anyway feel free to feedback if you provide reproducible test repo I will look and answer your about the problem will not fix right now sorry again	0	0
+We still not support this for library module but we are already close	0	0
+Sorry for the frustrating experience I cannot make any promises but of course this will be considered as we draw up the iteration plan for the next release	0	0
+Any chance of having the json file resolve even if it does not have the extension? I have an external dependency that did not specify the extension I think it should be a concern of the developer to pay attention to the collisions Preferably the typescript compiler should warn about the collisions but I am not sure about the performance development implications of this	0	0
+I have the same issue updating the types react package did not help	0	0
+I have same problem dose anyone have any solution?	0	0
+I am really confused now You referred to 42609 and 40125 which describe an issue that affect type checking when using trackBy yet those examples show programmatic samples and appear to indicate that there is an issue with runtime behavior	0	0
+Not sure It s not assigned and there is no milestone so no one is planning to look at it in the near future and it is up for grabs if anyone wants to try fixing it That said I have a little bit more info that I will post in a minute	0	0
+I am confused are you saying that it is a map of array of nodes? Why was the original signature any ?	0	0
+I did not mean to delete it just restructure it Previously it only verify if there was no symbol for the left side so I changed it to test if there an expression on the left side which I felt was still in line with the original intent of the test In retrospect I do not think I fully understand what symbol means to the compiler Is there a symbol for func ?? foo but not a symbol for 123 doesNotExist ?? invalid date ? I would expect neither cases to have symbols but based on my investigation here I think that understanding is incorrect If these are distinct cases then you are right that we probably should keep the old test but if they are the same then the new test should be enough on its own	0	0
+Hmmm seems weird workspace packages do not act like real packages?	0	0
+I thought I should leave it so we did not get a bunch of duplicate reports but I may have misunderstood what the flag does I guess I should just test it	0	0
+Oh yes not sure how this happened Confused why renovate did not resolve this previously	0	0
+I was already wondering after logging the ActivatedRoute instance to console and I saw both params and paramsMap Didnt know why and when I should use one over the other I just started learning Angular and a lot of convention is kinda confusing Thanks for the clarification	0	0
+This is not true If a script claims webpack assigned policy it means it has already control over the code and potentially can introduce more sever attacks Also I am not sure I understand which scripts are run before webpack If I misunderstanding the comment can you please clarify what I am missing?	0	0
+I am not sure what this comment means given that this template is for packages not applications	0	0
+is this not always passed? or is it always passed but sometimes null?	0	0
+cannot see it in the plans for 4 5 is that right or am I missing something ?	0	0
+Not sure on embedded newline vs \n	0	0
+Fixing these but FYI the previous format was suggested by the linter not sure why	0	0
+i assume you mean? is this needed anywhere?	0	0
+Hi thanks for your review but i think this case cover my changed because when i run the case in the older code i got an error i look at the test hotCases folder but i dont know how can i run these cases	0	0
+Off the top of my head I don’t see why you have to look at the children Shouldn’t the span of the first to last child be equal to the span of the PropertyAccessEpression itself i e accessExpression getFullWidth ?	0	0
+Is this hint useful?	0	0
+That s not what the documentation is saying though? Now I have to change any existing and future rule that might process assets loaded as source	0	0
+so why is it generating this css that is invalid	0	0
+Also isMemberCompletion seems possibly wrong but I don’t know what that controls thinking face	0	0
+I suspect this is known but this is not specific to test files it happens with any non lib main dart target including a normal app too It does still only occur with with the plugin above and not with a newly created empty app though	0	0
+What s the status here? I am not sure what the comment on the revert about file structure means exactly so I am not clear on what the next steps are	0	0
+When dismissing the keyboard the textField gets cleaned thus changed Is it actually a bug?	0	0
+Why is this now necessary? Seems odd	0	0
+curious for your thoughts I do not love this opt in strategy but it was the most straight forward path	0	0
+I took a look at the meeting notes 45504 and I did note this bit I am curious about what the right tool is then? There does not really seem to be a great alternative to doing this In particular the problem is that of run time equivalence the library is intended to be usable both with plain JS and TS JSX cannot be used without compiling and furthermore the use case of safe HTML templates was among the original design considerations that TC39 looked at Tagged template literals are a very natural API for native JS libraries see also The approach taken by Svelte Vue custom language servers or tsserver plugins does not really scale writing transformers to turn syntax into JSX seems like a significant amount of work especially for smaller projects This approach also does not even allow for correctness checks at compile time	0	0
+Interesting Curious as to why is new Promise function resolve resolve better than Promise resolve here and above?	0	0
+Is this still true?	0	0
+Not returning was just a bug?	1	0
+I am not sure it should be enabled is an accurate description of this test thinking face	0	0
+hm what about if I want to use it in PHP Ruby Python now developers can generate json file and read it	0	0
+Strictly speaking these two cases are not in the scope of the original issue As you are able to see from the baselines the current behavior here is to throw errors Intuitively however the behavior I described in the comments makes more sense to me I would be interested in your thoughts on this matter slightly smiling face Regarding implementation I was not able to figure out how to check whether a mapped type is optional includes the ? Do we have a property that tracks that or should we check whether the value type includes undefined ?	0	0
+just curious if this field was unused?	0	0
+What happened?	0	0
+I am not sure I understand here Should double infinity be allowed as a minThumbLength ? Also the scrollbar currently only supports finite viewports Infinitely long scrollables are not currently supported	0	0
+Hi do you experience the same behaviour when using the GestureDetector as when you are using the Listener ?	0	0
+Hi how do you propose the error assertion message be improved?	0	0
+as this was inherited from the JavaScript version of this codelab I am curious how you all fixed this ambiguity?	0	0
+Ooops! I put it there while I had CI rerun a flakey job and forgot to remove it once it passed smiling face with halo	0	0
+Oh it is my problem The method just provided is indeed normal But there are mistakes in the following process The code given by webpack is format in line 3 it is wrong my webpack config	0	0
+ahhh totally forgot that generated the binary in my linux desktop	0	0
+To be honest I am not so confident with regular expressions that it took me some time to come up with this solution to replace all leading tab characters I was surprised not to find an example where this is done I have seen the note on MDN as well but without the global flag only the first tab character was replaced in my test I have created a jsfiddle and asked about why this works on stackoverflow While writing this comment my question was answered Now I just need to find a good comment that clarifies the use of both sticky and global for this line Does this do it for you?	0	0
+Odd we should not have needed the parentheses here I assume its because the union is no longer flat?	0	0
+Hm that s unexpected I tried this locally and the images look fine Can you try again splitting the paths at the points where the strings were previously split ? sub NOTE I have accidentally deleted a c in my suggested change I fixed it now to avoid confusion in the future sub	0	0
+hmm even after a push I still see this test on github but not locally	0	0
+I wonder why this has not happened before since it is a pretty obvious bug	0	0
+I am confused by ddsInstance? done whenComplete Wouldn t we get a NPE trying call whenComplete if ddsInstance null ? I m assuming I am wrong and you and the analyzer are correct though	0	0
+Just interesting why we need this?	0	0
+I have currently no clue but I will have a look	0	0
+Oh the error message is copied from Chrome But Chrome does not support static initialization block either that is strange	0	0
+This is weird A Parser does not have a parser method I would expect constructor or parse	0	0
+Surely there must be something like this already?	0	0
+i am actually surprised this did not get flagged by the analyzer	0	0
+What do you mean by assert? And yeah good point about handling null later I am surprised it is not an analysis warning	0	0
+hmm that is really interesting I think this is something for	0	0
+This is very surprising to me and seems undesirable but I’ll let have the definitive word	0	0
+I am not sure this is working as expected	0	0
+Very very weird maybe you can debug and provide source code of module?	0	0
+I also wonder why this snapshot differs?	0	0
+That s strange	0	0
+yes i am really surprised that it is only a p4 and for so long In the meantime i will try to handle it with What do you think ?	0	0
+I was quite surprised when my prebaked webpack cache was not used in Github Codespaces I have tracked it down to the cache using absolute paths I would love the cache stay valid when moving the project directory or downloading a prebuilt cache folder it would make things easier	0	0
+Thanks! That s what I was curious about	0	0
+It’s very strange why there is a display error I have confirmed that there is no problem before uploading the code I will try to reproduce it and fix it !	0	0

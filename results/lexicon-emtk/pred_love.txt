@@ -1,0 +1,41 @@
+Input file: features-love.csv 
+Classifier: L2-regularized logistic regression (primal) 
+Results for C=0.01 : 0.8945489 accuracy.
+Time taken for k-fold: Time difference of 48.63533 secs
+Results for C=0.05 : 0.8984504 accuracy.
+Time taken for k-fold: Time difference of 47.62877 secs
+Results for C=0.1 : 0.9059787 accuracy.
+Time taken for k-fold: Time difference of 44.65035 secs
+Results for C=0.2 : 0.9166392 accuracy.
+Time taken for k-fold: Time difference of 46.55163 secs
+Results for C=0.25 : 0.9221893 accuracy.
+Time taken for k-fold: Time difference of 44.38805 secs
+Results for C=0.5 : 0.9364765 accuracy.
+Time taken for k-fold: Time difference of 47.83108 secs
+Results for C=1 : 0.9535114 accuracy.
+Time taken for k-fold: Time difference of 48.11777 secs
+Results for C=2 : 0.9690076 accuracy.
+Time taken for k-fold: Time difference of 48.25727 secs
+Results for C=4 : 0.9824706 accuracy.
+Time taken for k-fold: Time difference of 46.21098 secs
+Results for C=8 : 0.9881855 accuracy.
+Time taken for k-fold: Time difference of 51.05121 secs
+Best cost is: 8 Best accuracy is: 0.9881855Time taken for training on test set: Time difference of 40.21022 secs
+Precision for NO is: 
+0.9363395
+ Recall for NO is: 
+0.991573
+ F1  for NO is: 
+0.9631651
+Precision for YES is: 
+0.8695652
+ Recall for YES is: 
+0.4545455
+ F1  for YES is: 
+0.5970149
+
+Confusion Matrix
+     yTest
+pred   NO YES
+  NO  353  24
+  YES   3  20

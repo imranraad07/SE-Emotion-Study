@@ -1,0 +1,41 @@
+Input file: features-sadness.csv 
+Classifier: L1-regularized_logistic_regression 
+Results for C=0.01 : 0.8707001 accuracy.
+Time taken for k-fold: Time difference of 3.264901 mins
+Results for C=0.05 : 0.8789427 accuracy.
+Time taken for k-fold: Time difference of 2.677344 mins
+Results for C=0.1 : 0.8819651 accuracy.
+Time taken for k-fold: Time difference of 1.207852 mins
+Results for C=0.2 : 0.8928454 accuracy.
+Time taken for k-fold: Time difference of 1.21586 mins
+Results for C=0.25 : 0.8948786 accuracy.
+Time taken for k-fold: Time difference of 1.326632 mins
+Results for C=0.5 : 0.9090559 accuracy.
+Time taken for k-fold: Time difference of 1.791011 mins
+Results for C=1 : 0.9315309 accuracy.
+Time taken for k-fold: Time difference of 2.756758 mins
+Results for C=2 : 0.9614793 accuracy.
+Time taken for k-fold: Time difference of 1.548281 mins
+Results for C=4 : 0.9787889 accuracy.
+Time taken for k-fold: Time difference of 1.745341 mins
+Results for C=8 : 0.9851632 accuracy.
+Time taken for k-fold: Time difference of 3.187394 mins
+Best cost is: 8 Best accuracy is: 0.9851632Time taken for training on test set: Time difference of 1.884376 mins
+Precision for NO is: 
+0.9130435
+ Recall for NO is: 
+0.973913
+ F1  for NO is: 
+0.9424965
+Precision for YES is: 
+0.71875
+ Recall for YES is: 
+0.4181818
+ F1  for YES is: 
+0.5287356
+
+Confusion Matrix
+     yTest
+pred   NO YES
+  NO  336  32
+  YES   9  23
