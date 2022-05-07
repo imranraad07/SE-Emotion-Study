@@ -22,7 +22,7 @@ The project includes the following files and folders:
   - __/crawlers__: A folder that contains the scripts we have used for data crawling.
      - githubcrawler.py: script for GitHub crawling.
  - __/data_preprocessing__: A folder that contains data preprocessing steps described in the paper section 3.2
-     - data_cleaner.py: contains implementation of the various filtering such as code filtering, url fildering, stacktrace removing, etc.
+     - data_cleaner.py: contains implementation of the various filtering such as code filtering, url filtering, stacktrace removing, etc.
      - github_modifier.py: contains implementation of dataset modifying based on functions implementing in data_cleaner.py.
  - __/data_augmentation__: A folder that contains data augmentation related scripts.
      - data_augmenter-unconstrained.py: contains implementation of Unconstrained strategy.
@@ -30,10 +30,37 @@ The project includes the following files and folders:
      - data_augmenter-polarity.py: contains implementation of Polarity strategy.
  - __/esem-e__: A folder that contains esem-e related code, data preprocessing, preprocessed datasets, and predictions.
      - svm.py: codes for the SVM model described in the esem-e model.
-  - __/results__: A folder that contains the results of all tools for all experiments.
+  - __/results__: A folder that contains the results of all experiments for all tools.
  - Annotation Instructions.docx: contains the annotation instructions that the annotators used.
  - requriments.txt: contains the The python libraries used in this experiment.
 
 ## Setup
 1. setup virtual environment and activate it
 2. `pip install -r requirements.txt'
+
+
+## Running Experiments
+# Running githubcrawler.py:
+`python githubcrawler.py --github_token GITHUB_TOKEN \
+                         --type TYPE \
+                         --repo_name REPO_NAME \
+                         --output_path OUTPUT_PATH`
+
+# Running github_modifier.py:
+`python github_modifier.py --input_path INPUT_PATH \
+                         --output_path OUTPUT_PATH`
+
+# Running data augmentations:
+`python data_augmenter-unconstrained.py --input_file INPUT_PATH \
+                         --output_file OUTPUT_PATH \
+                         --model_path facebook/bart-base`
+
+`python data_augmenter-lexicon.py --input_file INPUT_PATH \
+                         --output_file OUTPUT_PATH \
+                         --model_path facebook/bart-base`
+input_file for data_augmenter-lexicon.py should be the output_file of data_augmenter-unconstrained.py
+
+`python data_augmenter-polarity.py --input_file INPUT_PATH \
+                         --output_file OUTPUT_PATH \
+                         --model_path facebook/bart-base`
+
