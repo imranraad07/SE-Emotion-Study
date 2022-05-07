@@ -56,6 +56,7 @@ The project includes the following files and folders:
 `python data_augmenter-lexicon.py --input_file INPUT_PATH \
                          --output_file OUTPUT_PATH \
                          --model_path facebook/bart-base`
+
 input_file for data_augmenter-lexicon.py should be the output_file of data_augmenter-unconstrained.py
 
 `python data_augmenter-polarity.py --input_file INPUT_PATH \
